@@ -22,4 +22,4 @@ jobs:
     - name: Build and push Docker image
       run: |
         docker build -t monishkumar09/docker123:latest.
-        docker push monishkumardvs/docker123: latest
+        docker push monishkumar09/docker123: latest
