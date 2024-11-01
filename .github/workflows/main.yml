@@ -17,9 +17,9 @@ jobs:
       uses: docker/setup-buildx-action@v1
 
     - name: Login to Docker Hub
-      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+      run: echo "${{ secrets.password }}" | docker login -u "${{ secrets.username }}" --password-stdin
 
     - name: Build and push Docker image
       run: |
-        docker build -t monishkumar09/dock123:latest.
-        docker push monishkumar09/dock123:latest
+        docker build -t sandiriamulya/docker45:latest.
+        docker push sandiriamulya/docker45:latest
